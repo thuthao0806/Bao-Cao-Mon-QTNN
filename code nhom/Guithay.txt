@@ -1,5 +1,0 @@
-G?i th?y!!
-Code nhóm e là có nghiên c?u trên m?ng ph?n t?i em làm là t?t c? nh?ng gì t?i em hi?u.
-Em g?p khó khan là em ch?y code b?ng jupyter nhung lúc luu file thì không bi?t n?u máy th?y không có jupyter thì có ch?y du?c không nên em có coppy ra python nhung em l?i không bi?t ch?y python làm sao. 
-Th?y xem qua n?u có nh?c nh? hu?ng d?n thêm thì mong th?y mail l?i giúp em và b? qua s? thi?u sót c?a nhóm e. 
-Em chân thành c?m on th?y!
