@@ -1,0 +1,457 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\fontsize{14pt}{18pt}\selectfont
+\begin{titlepage}
+	\begin{center}
+		{\large {VIETNAM LABOR UNION}}\\
+		{\large \textbf{TON DUC THANG UNIVETSITY}}\\
+		{\large \textbf{FACULTY OF MATHEMATICS AND STATISTICS}}\\[0.5cm]
+		\hfill\\
+	%%	\includegraphics[height=2.5cm,width=3.5cm]{logo.png}\\
+		\vspace{2cm}
+		{\Huge{\textbf{REPORT}}}\\
+		\vspace{2cm}
+		{\Large\textbf{COURSE'S NAME: STOCK MARKE VOLATILITY AND LEARNING}}\\
+			\vspace*{1cm}
+		{\Large\textbf{Lecturer: Dr. Nguyen Chi Thien}}\\
+			\vspace*{3cm}
+		{\large\textbf{\noindent STUDENT’S NAME:\\ TRAN THI THU THAO-C1501035\\DU HUONG MY LINH-C1501051}}\\
+	
+		
+	\end{center}
+	\vspace{2cm}
+	\begin{center}
+		{\textbf {HO CHI MINH CITY, JUNE 2019}}
+	\end{center}
+\end{titlepage}
+Biến động thị trường chứng khoán đã nhận được nhiều sự chú ý bằng chứng là chúng ta dễ dàng nghe hay đọc tin tức về nó trên báo đài hay thông tin truyền thông đại chúng. \\
+	Thị trường chứng khoán biến động hàng ngày, và với mỗi thay đổi về giá, có người thắng và người thua chứng khoán. Quá nhiều biến động có nghĩa là có sự không chắc chắn trên thị trường - không tốt cho các nhà đầu tư. Các nhà đầu tư chuyên nghiệp cố gắng cách ly danh mục đầu tư của họ khỏi sự biến động bằng cách đa dạng hóa các khoản đầu tư của họ để nếu một cổ phiếu giảm giá trị thì một cổ phiếu khác sẽ chùng xuống.\\
+	Và trong thị trường cổ phiếu, người quản lý phải nhận thức được khả năng danh mục đầu tư của mình sẽ giảm trong
+	Tương lai. Biến động trong quá khứ có thể được sử dụng để dự đoán biến động trong tương lai và đây là một đầu vào quan trọng để đưa ra quyết định đầu tư và lựa chọn danh mục đầu tư.\\
+	Đối với các nhà đầu tư thị trường chứng khoán và trái phiếu, xu hướng từ dữ liệu lịch sử sẽ hữu ích để chiến lược phân bổ tài sản cho lợi nhuận tốt nhất có thể để hạn chế rủi ro tiếp xúc với các nhà đầu tư.\\
+	
+	Các nhà đầu tư thị trường chứng khoán rõ ràng cần quan tâm đến
+	biến động giá cả, đối với biến động cao có thể có nghĩa là tổn thất hoặc lợi nhuận lớn và do đó sự không chắc chắn lớn hơn. Trong các thị trường đầy biến động, rất khó để các công ty tăng vốn. Sự biến động của lợi nhuận trong thị trường tài chính có thể là một trở ngại lớn đối với việc thu hút đầu tư.
+	
+	Khả năng dự đoán biến động có thể được sử dụng để phòng ngừa rủi ro. Do đó, đo lường
+	biến động là rất quan trọng trong các tài liệu của kinh tế tài chính và
+	kinh tế lượng. Các nhà quản lý danh mục đầu tư và các nhà hoạch định chính sách tại các thị trường mới nổi có thể
+	đánh giá và phòng ngừa rủi ro hoặc các công cụ phái sinh giá dựa trên các biện pháp biến động để biết lợi ích và chi phí
+	
+	\section{Kiến thức nền}
+	\subsection{Định nghĩa}
+\textbf{* Cổ phiếu là gì?}\\
+Chứng khoán là bằng chứng xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với tài sản hoặc phần vốn của tổ chức phát hành. Chứng khoán được thể hiện bằng hình thức chứng chỉ, bút toán ghi sổ hoặc dữ liệu điện tử. Chứng khoán bao gồm các loại: cổ phiếu, trái phiếu, chứng chỉ quỹ đầu tư, chứng khoán phái sinh.\\
+Cổ Phiếu: là 1 loại chứng khoán được phát hành dưới dạng chứng chỉ hoặc bút toán ghi sổ, xác nhận quyền sở hữu và lợi ích hợp pháp của người sở hữu cổ phiếu đối với tài sản hoặc vốn của 1 công ty cổ phần khi mua cổ phiếu, những nhà đầu tư (các cổ đông) sẽ trở thành chủ sở hữu đối với công ty. Mức độ sở hữu đó tùy thuộc vào tỷ lệ cổ phần mà cổ đông nắm giữ\\
+
+\textbf{* Biến động là gì?}\\
+	Đó là phạm vi và tốc độ của biến động giá. Được định nghĩa là một thước đo tần suất và mức độ nghiêm trọng của biến động giá trong một thị trường nhất định. Bằng cách nhìn vào sự biến động, chúng ta có thể cố gắng đánh giá rủi ro. Đó là khi sự không chắc chắn giữa các nhà đầu tư có thể thúc đẩy sự biến động của thị trường chứng khoán, khi giá cổ phiếu tăng nhanh. Hầu như tất cả các tài sản nhìn thấy sự biến động về giá trị theo thời gian. Biến động cũng thể hiện cơ hội lợi nhuận tốt hơn mong đợi - và đối với các nhà đầu tư dài hạn kiên nhẫn, biến động có thể giúp thúc đẩy kết quả.\\
+	\textbf{*Kiến thức nền Toán}\\
+	Vì xuyên suốt bài báo, tác giả đã áp dụng những kiến thức về Toán học. Vì thế, chúng tôi xin được nhắc lại để việc tham khảo bài báo trở nên thuận lợi hơn.\\
+	\textbf{\underline{+ Phân phối chuẩn:}}
+	Phân phối chuẩn, còn gọi là phân phối Gauss hay (Hình chuông Gauss), là một phân phối xác suất cực kì quan trọng trong nhiều lĩnh vực. Gồm các tham số  tham số giá trị trung bình $\mu$ và tỉ lệ phương sai $\sigma^2$.\\
+	\textbf{\underline{	+ Phương pháp Bình phương tối tiểu:}} là một phương pháp tối ưu hóa để lựa chọn một đường khớp nhất cho một dải dữ liệu ứng với cực trị của tổng các sai số thống kê (error) giữa đường khớp và dữ liệu.\\
+	Giá trị thực tế: $Y_i=\hat{\beta_1}+\hat{\beta_2}X_i+\hat{e_i}$\\
+	Giá trị ước lượng: $\hat{Y_i}=\hat{\beta_1}+\hat{\beta_2}X_i $\\
+	Sai số: $e_i=Y_i-\hat{Y_i}$
+	\section{NỘI DUNG BÀI BÁO}
+	\subsection{Giới thiệu}
+	
+	Mục đích của bài viết này là chỉ ra rằng một mô hình định giá tài sản  đơn giản nhất có thể từ tỉ lệ các kì vọng. Đây là một kết quả đáng chú ý vì các bài báo nghiên cứu trước đó đa số đi từ thực nghiệm.\\
+	Mô hình của bài báo dựa trên nền kinh tế sở hữu tiện ích tách rời thời gian được phát triển bởi Lucas (1978). Biết rằng những tác động của mô hình này dựa theo kỳ vọng hợp lý với giá tài sản cơ bản. Chúng ta có thể quan sát được  dữ liệu tỷ lệ cổ tức giá quá biến động và dai dẳng,lợi nhuận cổ phiếu quá biến động và có liên quan tiêu cực đến tỷ lệ giá cổ tức trong thời gian dài và phí bảo hiểm rủi ro quá cao.
+	Mô hình cây Lucas đã được mở rộng theo nhiều hướng để cải thiện hiệu suất thực nghiệm. Sau nhiều bài báo và đã thành công như Campbell và Cochrane (1999).
+	Trong mô hình này, chúng tôi giả định các đại lý hình thành kỳ vọng của họ về giá cổ phiếu trong tương lai với Phương pháp tiêu chuẩn nhất được sử dụng: \textbf{"Bình phương tối thiểu  (OLS)"}.
+	
+	Quy tắc này có giá trị tài sản dài hạn cân bằng hội tụ đến kỳ vọng hợp lý. Nhưng giá trị này rất khác với tỉ lệ giá kỳ vọng. Sự khác biệt này xảy ra với các lí do sau:\\
+	+ Kỳ vọng về tăng trưởng giá cổ phiếu đã tăng, tốc độ tăng trưởng thực tế của giá
+	có xu hướng tăng vượt quá tốc độ tăng trưởng cơ bản.\\
+	+ Giá cổ phiếu và sự kỳ vọng và tạo ra độ lệch lớn, kéo dài của tỷ lệ cổ tức giá so với giá trị trung bình của nó.\\
+	Các mô hình đã được sử dụng trước đây để giải thích một số khía cạnh của tài sản: Timmermann (1993, 1996), Brennan và Xia (2001) và Cogley
+	và Sargent (2006)  dựa trên \textbf{phương pháp Bayes} để giải thích các khía cạnh khác nhau của chứng khoán.\\
+	
+	Các tác giả này cho rằng các đại lý tìm hiểu về quá trình cổ tức và
+	sử dụng \textbf{Phương pháp Bayes} trên các tham số của quá trình này để ước tính
+	tổng cổ tức chiết khấu dự kiến.\\
+	\underline{ Phần 2}: các tính năng cơ bản của mô hình định giá tài sản cơ bản.\\
+	\underline{ Phần 3}: mô hình rủi ro trung lập đơn giản nhất.\\
+	\underline{ Phần 4}: mô hình học tập cơ bản với rủi ro và quy trình hiệu chuẩn cơ sở.\\
+	\underline{ Phần 5}: mô hình cơ sở có thể tái tạo một cách định lượng tất cả các sự kiện được thảo luận trong phần 2.\\
+	\underline{ Phần 6}: quy tắc học tập và quy trình hiệu chuẩn được minh họa.
+	\subsection{Thực tế}
+		\begin{figure}[!h]
+		\centering
+%%		\includegraphics[height=6cm,width=10cm]{hinh1}
+		%\caption{da}
+	\end{figure}
+	Phần này mô tả các sự kiện cách điệu của dữ liệu giá cả chứng khoán Hoa Kỳ và giải thích lý do tại sao khó khăn khi tái tạo chúng bằng các mô hình kỳ vọng tiêu chuẩn.\\
+	Chúng ta định nghĩa $D_t$ là cổ tức của một cổ phiếu được cung cấp không co giãn trong giai đoạn $t$, phát triển theo:
+	\begin{equation}
+	\frac{D_t}{D_{t+1}}=a\varepsilon_t
+	\end{equation}
+	với điều kiện: $\log \varepsilon_t \sim N(\frac{-s^2}{2},s^2) \quad \text {and}  \quad a \geq 1.$ Và bảo đảm rằng $E\left(\frac{D_t}{D_{t+1}}\right)=a$ và $\sigma\left(\frac{\Delta D}{D}\right)=s$\\
+	
+	Đặt sự ưu tiên  của một nhà đại diện đầu tư tiêu dùng là
+	$$E_0\sum_{t=0}^{\infty}\delta^tU(C_t)$$
+	Với $C_t$ là mức tiêu thụ tại thời điểm $t$ $\delta$ là hệ số chiết khấu và $U(.)$ là hàm tăng hoặc giảm.\\
+	Với $S_t$ là kí hiệu chứng khoán  $t$ và $B_t$ là trái phiếu tại thời điêm kết thúc nên ta có thu được:
+	$$C_t+P^b_tB_t+P_tS_t=(P_t+D_t)S_{t-1}+B_{t-1}$$
+	$P_t$ là giá trị thực của chứng khoán và $P^b_t $ là giá trị của trái phiếu.Dưới giá trị của kì vọng,giá cổ phiếu cân bằng phải đáp ứng điều kiện đánh giá đầu tiên của người tiêu dùng 
+	\begin{equation}
+	P_t=\delta E_t\left[\frac{U^{'}(D_{t+1})}{U^{'}(D_t)}\right](P_{t+1}+D_{t+1})
+	\end{equation}
+	
+	Trong trường hợp tiêu chuẩn $U(C_t)=C^{-\sigma}_t$ và phương trình (2) trở thàn
+	
+	\begin{equation}
+	P_t=\delta E_t\left[\left(\frac{D_t}{D_{t+1}}\right)^\sigma(P_{t+1}+D_{t+1}) \right]
+	\end{equation}\\
+	Với tỉ lệ kỳ vọng về giá ở tương lai, cổ phiếu cân bằng thỏa
+	\begin{equation}
+	P_t=\frac{\delta\beta^{RE}}{1-\delta\beta^{RE}}D_t
+	\end{equation}
+	Với
+	\begin{equation} 
+	\beta^{RE}=a^{1-\sigma}e^{-\sigma(1-\sigma)\frac{s^2}{2}}
+	\end{equation}
+	\begin{equation}
+	E_t\left(\left(\frac{D_t}{D_{t+1}}\right)^{\sigma}P^{RE}_{t+1}\right)=\beta^{RE}P^{RE}_t
+	\end{equation}
+	
+	\subsubsection{Tỷ lệ giá cổ tức rất biến động}
+	Xuất phát từ phương trình (2) để phù hợp với độ biến động quan sát được của mô hình
+	Tỷ lệ PD theo kỳ vọng hợp lý đòi hỏi phải có các thông số ưu tiên thay thế.\\
+	
+	Thật vậy,chúng ta vẫn duy trì các giả định của i.i.d: tăng trưởng cổ tức tỷ lệ thay thế biên chỉ mức độ tự do còn lại cho các nhà đâu tư.Điều này giải thích sự phát triển của một mô hình lớn và thú vị. Giới thiệu số lượng thói quen để xem xét người tiêu dùng có
+	sở thích được đưa ra bởi
+	$$E_0\sum_{t=0}^{\infty}\delta ^{t}\frac{(\mathbb C)^{1-\sigma}-1}{1-\sigma}$$
+	Với $\mathbb{C}=H(C_t,C_{t-1},C_{t-2},...)$ là một hàm của giá trị tiêu dùng ở quá khứ và hiện tai.\\
+	Một mô hình đơn giản được phát triển bởi Abel(1990):
+	$$\mathbb{C}=\frac{C_t}{C^k_{t-1}}$$
+	Với $k \in (0,1)$. Trong trường hợp này, giá chứng khoán dưới tỉ lệ kỳ vọng là:
+	\begin{equation}
+	\frac{P_t}{D-t}=A(a\varepsilon_t)^{k(\sigma -1)}
+	\end{equation}
+	Với hằng số A mô hình này chứng tỏ rằng tỉ lệ giá cổ phiếu biến động.Khi $\varepsilon _t$ là i.i.d thì tỉ lệ giá cổ tức không có sự tương quan. Nó là sự tương phản hoàn toàn  với bằng chứng thực nghiệm. Vì thế chúng ta sẽ đề cập tới Thực tế số 2
+	\subsubsection{Tỷ lệ giá cổ tức ổn định}
+	
+	Các quan sát trước đây cho thấy rằng phù hợp với sự biến động và tồn tại của tỷ lệ giá cổ tức theo kỳ vọng hợp lý sẽ yêu cầu các ưu tiên làm tăng tỷ lệ thay thế cận biên không ổn định và liên tục. Dựa theo nghiên cứu của Campbell and Cochrane(1999)cho thấy rằng có thể phù hợp với tỷ lệ giá cổ tức chúng ta quan sát được trong hình 1 ở trên.
+	Đặc điểm kỹ thuật của họ cũng giúp nhân rộng các sự kiện định giá tài sản được đề cập sau. Sự giải quyết chấp nhận được, tuy nhiên cảm giác rủi ro cao và cấu trúc phức tạp tong hàm $H(.)$\\
+	Trong mô hình này, chúng tôi duy trì giả định về các ưu tiên tiêu dùng có thể phân tách theo thời gian tiêu chuẩn với mức độ sợ rủi ro vừa phải.
+	Sự ổn định và biến động của tỷ lệ giá cổ tức sẽ là kết quả của sự điều chỉnh niềm tin được gây ra bởi quá trình này.\\
+	Trước khi đi vào chi tiết về mô hình này, chúng tôi muốn đề cập đến việc định giá tài sản bổ sung về lợi nhuận cổ phiếu. Những sự thật này đã nhận được sự chú ý đáng kể trong các tài liệu và có liên quan về tỷ lệ giá cổ tức, như chúng ta sẽ thảo luận dưới đây.
+	\subsubsection{Lợi nhuận chứng khoán biến động quá mức}
+	Bắt đầu với nghiên cứu  của Shiller (1981) và LeRoy và Porter (1981),
+	được công nhận rằng giá cổ phiếu biến động dữ liệu nhiều hơn so với mô hình chuẩn.
+	Liên quan đến điều này là quan sát rằng sự biến động của lợi nhuận chứng khoán
+	$\sigma_{r^s}$ trong dữ liệu cao hơn nhiều so với biến động của tăng trưởng cổ tức $(\sigma_{\Delta D/D}).$
+	Quan sát biến động này  được gọi là  chủ yếu bởi vì mô hình kỳ vọng hợp lý vì các ưu tiên tách 
+	biệt thời gian dự đoán với biến động xấp xỉ giống hệt nhau.\\
+	Kí hiệu $r^s_t$ là lợi nhuận chứng khoán
+	\begin{equation}
+	r^s_t=\frac{P_t+D_t-P_{t-1}}{P_{t-1}}=\left[\frac{\frac{P_t}{D_t}+1}{\frac{P_{t-1}}{D_{t-1}}}\right]\frac{D_t}{D_{t-1}}-1
+	\end{equation}
+	Và chú ý về sự tách biệt thời gian và cổ tức tăng trưởng độc lập và phân phối giống nhau.Tỷ lệ giá cổ tức không đổi và  $\left[\frac{\frac{P_t}{D_t}+1}{\frac{P_{t-1}}{D_{t-1}}}\right]\approx 1.$
+	Phương trình (8) ở trên cho thấy rằng  biến động lợi nhuận quá mức liên quan về mặt chất lượng với \textbf{vấn đề 2.2.1} thảo luận ở trên,vì sự biến động trở lại phụ thuộc một phần vào độ biến động của tỷ lệ giá cổ tức tăng- giảm xấp xỉ tuyến tính. Nó tương quan chéo giữa tỉ lệ giá cổ tức và sự đánh giá tăng trưởng của cổ tức. \\
+	Khi sự đóng góp mô hình chính là chỉ ra khả năng của mô hình để giải thích cho các tính chất định lượng của dữ liệu, chúng tôi coi sự biến động của lợi nhuận là một thực tế định giá tài sản riêng.
+	\subsubsection{Lợi nhuận cổ phiếu có thể vượt dự đoán trong thời gian dài}
+	Mặc dù lợi nhuận cổ phiếu là dự đoán chung, tỷ lệ giá cổ tức có liên quan tiêu cực đến lợi nhuận cổ phiếu dư thừa trong tương lai về lâu dài. Điều này được minh họa
+	trong Bảng 2, cho thấy kết quả hồi quy lợi nhuận vượt quá tích lũy trong tương lai so với sự khác nhau về tỷ lệ cổ tức giá hiện nay.\\
+	Tuy nhiên, chúng tôi giữ dự đoán lợi nhuận vượt quá mức là một kết quả độc lập, vì ý nghĩa của mô hình là kết quả định lượng.Tuy nhiên, Cochrane cũng cho thấy rằng giá trị tuyệt đối của tham số hồi quy tăng xấp xỉ tuyến tính, đó là một kết quả định lượng. Lí do này, chúng ta tổng kết tóm tắt là dự đoán lợi nhuận bằng cách sử dụng kết quả hồi quy cho một dự đoán duy nhất.
+	\subsubsection{Câu đố về chủ sở hữu vốn cao cấp}
+	
+	Cuối cùng, và mặc dù sự nhấn mạnh của bài báo của chúng tôi là vào
+	Tỷ lệ giá cổ tức và lợi nhuận chứng khoán, nhưng thật thú vị khi lưu ý rằng mô hình cũng được cải thiện so với của mô hình chuẩn để phù hợp với câu đố chủ sở hữu vốn cao cấp.
+	Các quan sát cho thấy rằng lợi nhuận chứng khoán- tính trung bình trong khoảng thời gian dài và được đo bằng điều khoản thực- có xu hướng cao so với lợi nhuận trái phiếu thực trong thời gian ngắn hạn. Trong bảng 1 chỉ ra thực tế tỷ lệ  hoàn vốn trung bình hàng quý
+	của trái phiếu $(E(r^b_t))$ thấp hơn nhiều so với tỷ lệ hoàn vốn tương ứng
+	cổ phiếu $(E(r^s_t)).$
+	Không giống Campbell và Cocharane(1999) chúng tôi không bao gồm trong danh sách thực tế của chúng tôi với bất kỳ mối tương quan giữa dữ liệu thị trường chứng khoán và các biến thực như tiêu dùng
+	hoặc đầu tư. 
+	Theo nghĩa này, chúng tôi theo dõi chặt chẽ hơn các tài liệu trong tài chính. Trong
+	mô hình này, đó là mô hình mang lại sự chuyển động trong giá cổ phiếu, ngay cả trong một mô hình với tính trung lập rủi ro trong đó tỷ lệ thay thế biên là một hằng số. Điều này trái ngược với  chuyển động của giá cổ phiếu có được bằng cách mô hình hóa quá trình ngẫu nhiên quan sát, tạo ra các chuyển động trong tỷ lệ thay thế biên.Các giải thích sau này  sao tài liệu tập trung vào mối quan hệ giữa giá trị tiêu dùng đặc biệt thấp và giá cổ phiếu thấp. Vì cơ chế này không đóng một vai trò quan trọng trong mô hình của chúng tôi, chúng tôi trừu tượng sự thật từ các giá tài sản này.
+	\subsection{Trường hợp rủi ro trung tính}
+	Trong phần này, chúng tôi phân tích mô hình định giá tài sản đơn giản nhất giả định tính trung lập rủi ro và ưu tiên tách biệt thời gian $(\sigma=0\quad\text{and}\quad \mathbb{C}_t=C_t)$.
+	Mục tiêu của việc này phần là để lấy kết quả định tính và cho thấy việc giới thiệu học tập cải thiện hiệu suất như thế nào so với một thiết lập với những kỳ vọng hợp lý.\\
+	Với tính trung lập rủi ro và kỳ vọng hợp lý mô hình bỏ qua gần như tất cả các sự kiện định giá tài sản được mô tả trong phần trước: tỷ lệ giá cổ tức không đổi, lợi nhuận chứng khoán là không thể phát hiện được (i.i.d) và xấp xỉ biến động như sự tăng trưởng cổ tức. Vì những lý do này, mô hình  rủi ro trung lập đặc biệt phù hợp để minh họa cách giới thiệu việc cải thiện chất lượng hiệu suất mô hình.\\
+	
+	Người tiêu dùng có niềm tin về các biến số trong tương lai, những niềm tin này được tóm tắt trong các kỳ vọng, được ký hiệu $\tilde{E}$ mà bây giờ chúng ta cho phép bé hơn tỉ lệ. Theo các giả định của phần này, phương trình (3) trở thành
+	\begin{equation}
+	P_t=\delta\tilde{E_t}(P_{t+1}+D_{t+1})
+	\end{equation}
+	Phương trình định giá tài sản này sẽ là trọng tâm phân tích của chúng tôi trong phần này. Và 
+	hình thành kỳ vọng về tổng chiết khấu của tất cả các khoản cổ tức trong tương lai được thiết lập
+	\begin{equation}
+	P_t=\tilde{E_t}\sum_{j=1}^{\infty}\delta^jD_{t+j}
+	\end{equation}
+	và việc đánh giá kỳ vọng được dựa trên phân phối Bayes về các tham số trong quá trình chia cổ tức.
+	Người ta biết rằng dưới tỷ lệ kỳ vọng và một số điều kiện hạn chế về tăng trưởng giá cả trong giai đoạn trước của (9) tương đương với biểu thức tổng chiết khấu cho giá.\\
+	Nếu các chủ đầu tư tìm hiểu về giá theo (10), thì tương lai là về các tham số của một biến ngoại sinh, tức là quá trình chia cổ tức. Giá thị trường sẽ không mong đợi. Kết quả, mô hình trong các bài báo này không phải là sự chắc chắn tham khảo từ Phương Pháp Bayes để hình thành.\\
+	Thay vào đó, ở đây, chúng tôi sử dụng công thức trong phương trình (9), trong đó các chủ đầu tư được giả định có một mô hình dự báo về giá và cổ tức của kỳ tiếp theo. Quan điểm của chúng tôi sẽ là chính xác khi các chủ đầu tư  hình thành kỳ vọng về giá cả để thỏa mãn (9) rằng có một sự ảnh hưởng lớn đến mô hình và dữ liệu được kết hợp tốt hơn.\\
+	
+	Tập trung vào phương trình (9) sẽ cải thiện hiệu suất thực nghiệm . Lưu ý rằng biểu thức tổng vô hạn (10) yêu cầu \textit{chiết khấu cổ tức }trong tương lai theo tỷ lệ \textit{chiết khấu thị trường}. Trong một thị trường thiết lập hoàn chỉnh , hệ số chiết khấu thị trường giống như của mỗi nhà đầu tư. Điều này ý rằng một nhà đầu tư có thể có được số tiền không thường xuyên (10) chỉ bằng cách lặp đi lặp lại với điều kiện đăt hàng đầu tiên của họ (9). Theo thị trường hoàn chỉnh, phương trình (10) do đó là hậu quả trực tiếp của việc giả định rằng các tác động đến vấn đề quyết định cá nhân của họ.\\
+	Giả sử, ví dụ, thị trường không đầy đủ do sự hiện diện của cú sốc thanh khoản không thể bảo hiểm
+	điều đó đôi khi buộc các nhà đầu tư bán cổ phiếu của họ. Những cú sốc này sẽ là giữa các yếu tố giảm giá cá nhân và thị trường, ý rằng cá nhân các nhà đầu tư phải làm thế nào thị trường giảm cổ tức trong tương lai.Thay vào đó, nhà đầu tư sẽ phải hình thành niềm tin về giá tương lai để có thể định giá tài sản của mình. 
+	Trạng thái cân bằng tỷ lệ kỳ vọng trong nền kinh tế áp dụng\textbf{ Phương pháp Bình phương tối tiểu} giống như trong \textit{Cây Lucas}, nhưng các chủ đầu tư trẻ có điều kiện thứ tự liên quan được đưa ra bởi (9). Kể từ khi phương trình Euler tương tự không áp dụng khi già, các tác nhân trẻ không thể có được tổng số không hoàn thành (10) một cách đơn giản.\\
+	Chính thức hơn, sử dụng số tiền chiết khấu (10) cũng có thể không phải là một cách mạnh mẽ để định giá tài sản, ngay cả khi thị trường hoàn tất. Giảm giá tổng công thức ý rằng các lỗi xấp xỉ nhỏ trong quy trình chia cổ tức có thể chuyển thành một lỗi định giá lớn. Đặc biệt, nếu mô hình dự báo cho cổ tức là hơi sai lầm vì nó là tối ưu để chỉ đơn giản là lặp đi lặp lại trên đó để lấy được
+	dự báo dài hạn, tức là, các quy tắc của các kỳ vọng lặp đi lặp lại được yêu cầu để có được số tiền chiết khấu có thể không giữ được. 
+	\subsubsection{Phân tích kết quả}
+	
+	Trong phần này, chúng tôi cho thấy rằng việc giới thiệu mô hình thay đổi một cách định tính của giá cổ phiếu theo hướng cải thiện sự phù hợp của với sự kiện cách điệu được mô tả ở trên. Tại thời điểm này, chúng tôi xem xét một mô hình  rộng bao gồm các quy tắc tiêu chuẩn được sử dụng trong tài liệu. Điều này phục vụ cho chứng minh rằng các trường điện tử mà chúng ta thảo luận xảy ra trong một lớp rất chung về các mô hình học tập.\\
+	Chúng tôi viết lại một cách tầm thường sự kỳ vọng của đại lý bằng cách chia tổng
+	trong sự mong đợi:
+	\begin{equation}
+	P_t=\delta\tilde{E_t}(P_t+1)+\delta\tilde{E_t}(D_t+1)
+	\end{equation}
+	
+	Giả sử rằng kỳ vọng của một cổ tức: $\tilde{E_t}(D_t+1)=aD_t$, giả định rằng số tiền của chủ đầu tư kỳ vọng về quá trình cổ tức. Điều này đơn giản là thảo luận và nhấn mạnh thực tế là nó đang tìm hiểu về giá cả trong tương lai cho phép mô hình phù hợp hơn với dữ liệu.\\
+	Các chủ đầu tư được giả định sử dụng một kế hoạch học tập để hình thành một dự báo
+	$\tilde{E_t}(P_t+1)$ dựa trên thông tin trong quá khứ. Phương trình (4) cho thấy theo sự
+	kỳ vọng $E_t[P_{t+1}]=aP_t$. Khi chúng tôi giới hạn phân tích của chúng tôi để học các quy tắc hành xử đủ gần với kỳ vọng hợp lý, chúng tôi chỉ định kỳ vọng theo mô hình như
+	\begin{equation}
+	\tilde{E_t}[P_{t+1}] =\beta_t P_t
+	\end{equation}
+	Với$\beta_t>0$, biểu thị thời chủ đầu tư  $t$ ước tính tăng trưởng giá cổ phiếu. Với $\beta_t=a$ thì niềm tin của chủ đầu tư trùng với sự kỳ vọng hợp lý.Ngoài ra, nếu niềm tin của chủ đầu tư
+	hội tụ theo thời gian đến trạng thái cân bằng của tỷ lệ kỳ vọng $(\lim_{t\to \infty}\beta_t=a)$ 
+	các nhà đầu tư sẽ nhận ra về lâu dài họ đã đúng khi sử dụng phương trình (12). Tuy nhiê, trong quá trình chuyển đổi kỳ vọng có thể đi chệch khỏi những tính toán.\\
+	Để xác định cách các chủ đầu tư cập nhật niềm tin của họ $\beta_t$. Chúng tôi xem xét
+	theo cơ chế học tập chung
+	\begin{equation}
+	\Delta\beta_t=f_t\left(\frac{P_{t-1}}{P_{t-2}}-\beta_{t-1}\right)
+	\end{equation}
+	Với một vài hàm ngoại sinh được chọn:$f_t:R\to R$ với tính chất:
+	$$f_t(0)=0$$
+	$$f^{'}t>0$$
+	Các chủ đầu tư điều chỉnh lại kỳ vọng lên (xuống), nếu họ dự đoán thấp (tăng trưởng quá mức) trong quá khứ. Có thể cho rằng, một mô hình  mà vi phạm những điều kiện này sẽ xuất hiện khá thường xuyên. Vì một vài lý do, chúng ta cũng cần giả sử rằng các hàm $f_t$ sao cho
+	\begin{equation}
+	0 \leq\beta_t\leq\sigma^{-1}
+	\end{equation}
+	tại mọi thời điểm. Ý rằng dự kiến lợi nhuận cổ phiếu vượt quá tỷ lệ nghịch của hệ số chiết khấu, khiến chủ đầu tư có nhu cầu bất thường đối với bất kỳ giá cổ phiếu nào.\\
+	Lấy kết quả định lượng và hội tụ về mô hình sẽ cần yêu cầu xác định một sơ đồ mô hình rõ ràng hơn. Tại thời điểm này, chúng tôi cho thấy rằng mấu chốt các tính năng của mô hình xuất hiện trong thông số kỹ thuật tổng quát hơn này.
+	\subsubsection{Giá cổ phiếu trong mô hình}
+	Cho các nhận thức $\beta_t$, hàm kỳ vọng (12) và giả định trên giá cổ tức, phương trình (11) ý rằng giá mô hình thỏa:
+	\begin{equation}
+	P_t=\frac{\beta aD_t}{1-\delta\beta_t}.
+	\end{equation}
+	Khi $\beta_t$ và $\varepsilon_t$ độc lập, phương trình trước có nghĩa:
+	\begin{equation}
+	Var\left(\ln\frac{P_t}{P_{t}-1}\right)=Var\left(\ln\frac{1-\delta\beta_{t-1}}{1-\delta \beta_t}\right)+Var\left(\ln\frac{D_t}{D_{t-1}}\right)
+	\end{equation}
+	
+	cho thấy tăng trưởng giá khi mô hình có nhiều biến động hơn so với sự phát triển cổ tức.\\
+	
+	Phương trình (15) cho thấy tỷ lệ giá cổ tức có liên quan đơn điệu đến niềm tin $\beta_t$.
+	Do đó, người ta có thể hiểu động lực định tính của tỷ lệ giá cổ tức bằng cách nghiên cứu
+	\textit{Động lực niềm tin.} Để thu được những thông báo động lực:
+	\begin{equation}
+	\frac{P_t}{P_{t-1}}=T{(\beta_t\Delta\beta_t)\varepsilon_t}
+	\end{equation}
+	Với 
+	\begin{equation}
+	T(\beta,\Delta\beta)\equiv a+\frac{a\delta\Delta\beta}{1-\delta\beta}
+	\end{equation}
+	Từ phương trình (17), $T(\beta_t,\Delta\beta_t)$ 
+	là giá cổ phiếu dự kiến \textit{thực tế} tăng trưởng, cho biết rằng tăng trưởng giá nhận thức đã được đưa ra bởi $\beta_t,\Delta_t$. Phương trình (15) cho biết $\beta_t(t\ge 1)$ được mô tả bởi một thứ tự ngẫu nhiên
+	\begin{equation}
+	\Delta\beta_{t+1}=f_{t+1}(T(\beta_t,\Delta\beta_t)\varepsilon_t-\beta_t)
+	\end{equation}
+	Với điều kiên đầu$(D_0,P_{-1})$ và niềm tin ban đầu $\beta_0$. Phương trình này không thể giải quyết bằng phương pháp phân tích phi tuyến tính. Nhưng vẫn có thể đạt được những hiểu biết định tính về động lực niềm tin của mô hình. Chúng tôi sẽ phân tích điều này trong phần kế tiếp.
+	\subsubsection{Động lực học quyết định}
+	Để thảo luận về động lực của niềm tin$\beta_t$ trong mô hình, chúng tôi đơn giản hóa vấn đề bằng cách xem xét trường hợp xác định trong đó $\varepsilon \equiv 1$. Phương trình (19) sau đó đơn giản hóa đến:
+	\begin{equation}
+	\Delta\beta_{t+1}=f_{t+1}(T(\beta_t,\Delta\beta_t)-\beta_t)
+	\end{equation}
+	Với những tính chất của $f_t$, phương trình (20) tăng khi $T(\beta_t,\Delta\beta_t)>\beta_t$, khi đó giá cổ phiếu thực tế vượt quá mức tăng trưởng của giấ cổ phiếu dự kiến.\\
+	Giá cổ phiếu thực tế tăng trưởng khi $T$ chỉ duy nhất  phụ thuộc vào bậc của kỳ vọng tăng trưởng $\beta_t$, nhưng chúng ta vẫn có thể thay đổi $\Delta\beta_t$. Đó là một phần của đà tăng trưởng cổ phiếu, dẫn dến sự phản hồi giữa kỳ vọng và tăng trưởng giá cổ phiếu thực tế. Vì vậy, chúng ta có thể phát biểu rằng\\
+	$\text{Với mọi} \quad\beta_t \in (0,\delta^{-1}),\quad \text{nếu}\quad \beta_t=a\quad\text{và}\quad \Delta\beta_t>0$, thì 
+	$$\Delta\beta_{t+1}>0$$
+	Và chiều đảo lại cũng sẽ đúng.\\
+	
+	Do đó, nếu các chủ đầu tư đến với niềm tin kỳ vọng hợp lý $\beta_t=a$,
+	tăng trưởng giá được tạo ra bởi mô hình sẽ tiếp tục phát triển và nó sẽ vượt quá tốc độ tăng trưởng cơ bản $a$. Vì sự kỳ vọng của các chủ đầu tư trở nên lạc quan. tăng trưởng giá trên thị trường có xu hướng lớn hơn sự tăng trưởng về nguyên tắc cơ bản. 
+	Vì niềm tin có liên quan đơn điệu đến tỷ lệ giá cổ phiếu, xem phương trình (15), ở đó
+	sẽ là đà trong giá cổ phiếu.Tuy nhiên, có thể thấy rằng giá cổ phiếu và niềm tin không thể ở mức không được điều chỉnh bởi các nguyên tắc cơ bản mãi mãi và sau bất kỳ sai lệch nào, cuối cùng nó sẽ hướng tới giá trị cơ bản. Chính thức, dưới một số bổ sung
+	giả định kỹ thuật chúng ta có:\\
+	\textbf{Mean reversion:}: Với$\eta>0$  bất kỳ, ở th(ời điểm $t$ sao cho $\beta_t>a+\eta(< a-\eta)$, khi thời gian $t$ hữu hạn $\bar{t}>.t$ sao cho  $\beta_{\bar{t}}<a+\eta(>a-\eta)$\\
+	
+	Vì $\eta$ có thể được chọn nhỏ tùy ý, tuyên bố trước đó cho thấy rằng niềm tin cuối cùng sẽ trở lại các nguyên tắc cơ bản hoặc. Điều này xảy ra ngay cả khi niềm tin của các chủ đầu tư hiện đang cách xa các nguyên tắc cơ bản. Mối quan hệ đơn điệu giữa các niềm tin
+	và tỷ lệ giá cổ tức sau đó ngụ ý hành vi hoàn nguyên của tỷ lệ giá cổ tức.
+	
+	\subsection{Mô hình rủi ro trung tính với Phương pháp bình phương tối tiểu}
+	\subsubsection{Nguyên tắc mô hình}
+	Chúng tôi chuyên quy tắc mô hình bằng cách giả định các chương trình học phổ biến nhất
+	được sử dụng trong các tài liệu về kỳ vọng. Chúng tôi giả định tiêu chuẩn phương trình từ tài liệu điều khiển ngẫu nhiên
+	\begin{equation}
+	\beta_t=\beta_{t-1}+\frac{1}{\alpha_t}\left(\frac{P_{t-1}}{P_{t-2}}-\beta_{t-1}\right)
+	\end{equation}
+	Với $t\ ge 1$ cho một dãy $\alpha_t\ge 1$ và giá trị niềm tin đầu tiên $\beta_0$mà
+	được đưa ra bên ngoài mô hình. Các chuỗi $\frac{1}{\alpha_t}$ được gọi là chuỗi tăng ích và cho biết mức độ tin tưởng mạnh mẽ như thế nào cập nhật theo hướng lỗi dự đoán cuối cùng. Trong phần này, chúng tôi giả sử thông số kỹ thuật đơn giản nhất có thể:
+	\begin{equation}
+	\alpha_t=\alpha_{t-1}+1\qquad t\ge 2
+	\end{equation}
+	$$\alpha_t\ge 1$$
+	
+	Như chúng ta đã thảo luận trong phần trước, đây là tính năng của mô hình
+	tạo ra động lực mà chúng ta quan tâm
+	$$\beta_t=\frac{1}{t+\alpha_{1}-1}\left(\sum_{j=0}^{t-1}\frac{P_j}{P_{j-1}}+(\alpha_{1}-1)\beta_0\right)$$
+	Rõ ràng, nếu $\alpha_1 = 1$ thì đây chỉ là trung bình mẫu của sự tăng trưởng giá cổ phiếu
+	do đó OLS nếu chỉ sử dụng hằng số trong phương trình hồi quy. Đối với trường hợp 1 là số nguyên, biểu thức này cho thấy $t$ là bằng với tốc độ tăng trưởng mẫu trung bình, nếu - ngoài thực tế quan sát được giá cả - chúng ta sẽ có$(\alpha_1 -1)$ các quan sát về tốc độ tăng trưởng bằng $\beta_0$. 
+	
+	Theo cách hiểu của Phương pháp Bayes, $\beta_0$ sẽ là giá trị trung bình trước của giá cổ phiếu tăng trưởng,$\alpha_{1}-1$ độ chính xác của trước thời gian $t$và - giả định rằng sự tỷ lệ giá  tăng trưởng thường được phân phối và i.i.d. - niềm tin $\beta_t$ sẽ bằng nhau.Trong khi giả định i.i.d sẽ giữ không  nó bị vi phạm theo quá trình chuyển đổi
+	động lực.\\
+	Trong trường hợp$\alpha_1=1$, $\beta_t$chỉ là trung bình mẫu của giá cố phiếu tăng trưởng. Trong trường hợp $\beta_0$
+	chỉ có vấn đề trong khoảng thời gian đầu tiên, nhưng không còn bất cứ điều gì sau khi sủ dụng dữ liệu đầu tiên.Ngoài ra, OLS thuần túy giả định rằng các đặc vụ không có niềm tin nào vào  niềm tin ban đầu và không có kiến thức về nền kinh tế trong thời kỳ đầu.\\
+	Trên tinh thần hạn chế những kỳ vọng cân bằng trong mô hình học tập của chúng tôi để
+	gần với lý trí, chúng tôi đặt niềm tin ban đầu bằng với giá trị của tốc độ tăng trưởng
+	giá theo tỷ lệ kỳ vọng
+	$$\beta_0=a$$
+	Và nếu ta chọn $\alpha_1$ đủ lớn. Ta sẽ giả sử rằng niềm tin bắt đầu với giá trị tỷ lệ kỳ vọng, mức độ kết hợp ban đầu trong niềm tin tỷ lệ kỳ vọng là cao, nhưng không hoàn hảo. Khoảng cách tối đa từ tỷ lệ kỳ vọng đạt được cho $\alpha_1=1$, tức là, Phương pháp Bình phương tối tiểu là thuần túy. Cuối cùng, chúng tôi cần giới thiệu một tính năng ngăn chặn giá cổ phiếu tăng trưởng từ việc vi phạm bất bình đẳng trên trong phương trình (14). Để đơn giản, chúng tôi làm theo Timmermann (1996) và Cogley và Sargent (2006) và áp dụng phép chiếu cơ sở: nếu trong một khoảng thời gian, niềm tin $\beta_t$ được xác định bởi phương trình(21) lớn hơn một vài hằng số $\beta^U \le \delta^{-1}$, ta có
+	\begin{equation}
+	\beta_t=\beta_{t-1}
+	\end{equation}
+	Một cách giải thích là nếu quan sát tăng trưởng giá quá cao, các chủ đầu tư nhận ra rằng điều này sẽ là một hành động điên rồ (nhu cầu chứng khoán không thường xuyên) và họ quyết định bỏ qua điều quan sát này .Rõ ràng, nó tương đương với yêu cầu giá cổ tức nhỏ hơn chặn trên $U^{PD}\equiv \frac{\delta a}{1- \delta\beta^U}$. Một cách giải thích khác là nếu giá cổ tức cao hơn giới hạn trên này, một trong hai tác nhân sẽ bắt đầu sợ suy thoái hoặc một số Cơ quan chính phủ sẽ can thiệp để hạ giá xuống. Trong các mô phỏng
+	bên dưới cơ sở này chỉ ràng buộc khi các thuộc tính của mô hình học tập không chính xác với giá trị chính xác mà chúng tôi gán cho $U^{PD}.$
+	\subsubsection{Tính hợp lý của tiệm cận}
+	Trong phần này chúng ta nghiên cứu giới hạn của mô hình đang học,
+	dựa trên kết quả từ các tài liệu về phương pháp bình phương tối thiểu. Tài liệu này
+	cho thấy ánh xạ $T$ được định nghĩa trong phương trình (18) là trọng tâm của việc có hay không niềm tin của các chủ đầu tư hội tụ đến giá trị của tỷ lệ kỳ vọng. Hầu hết các tài liệu xem xét các mô hình mà ánh xạ từ  nhận thức được những kỳ vọng thực tế không phụ thuộc vào sự thay đổi trong nhận thức, không giống như trường hợp khi $T$ phụ thuộc vào $\Delta\beta_t$. Khi $t$ đủ lớn và $(\alpha_t)^{-1}$ trở nên rất nhỏ, chúng ta có phương trình (21) ý rằng $\Delta\beta_t \approx 0$. Điều này dường như chỉ ra rằng niềm tin nên hội tụ đến giá trị cân bằng của tỷ lệ kỳ vọng $\beta=a$. 
+	Ngoài ra, sự hội tụ phải nhanh, do đó người ta có thể kết luận rằng không có nhiều thứ để đạt được từ việc giới thiệu mô hình định giá tài sản tiêu chuẩn.\\
+	
+	Phụ lục A.7 cho thấy chi tiết rằng các xấp xỉ trên là chính xác. Cụ thể, mô hình trên  hội tụ đến trạng thái cân bằng tỷ lệ kỳ vọng $\beta_t \to a$ là gần như chắc chắn. Do đó, mô hình học tập thỏa mãn tiệm cận. Tính hợp lý như được xác định trong phần III trong Marcet và Nicolini (2003). Nó ngụ ý các tác nhân sử dụng cơ chế học tập sẽ nhận ra trong thời gian dài rằng họ đang sử dụng dự báo tốt nhất có thể. Do đó, họ sẽ không có  thay đổi kế hoạch mô hình của họ.\\
+	Tuy nhiên, phần còn lại của bài viết này cho thấy rằng mô hình của chúng tôi hành xử rất khác nhau từ tỷ lệ kỳ vọng trong quá trình chuyển đổi đến giới hạn. Điều này xảy ra ngay cả khi các tác nhân sử dụng công cụ ước tính bắt đầu với độ tin cậy cao ở giá trị tỷ lệ kỳ vọng, đó là hội tụ đến giá trị tỷ lệ kỳ vọng và đó sẽ là công cụ ước tính tốt nhất dài hạn. Sự khác biệt lớn đến mức ngay cả khi mô hình rất đơn giản này một cách định tính
+	, phù hợp với thực tế định giá tài sản tốt hơn nhiều so với mô hình trong tỷ lệ kỳ vọng.
+	
+	\subsection{Mô hình cơ sở với rủi ro}
+	
+	Phần còn lại của bài báo cho thấy mô hình học tập cũng có thể tính toán một cách định lượng cho dữ liệu, một khi cho phép mức độ không thích rủi ro vừa phải và mức tăng này mạnh mẽ đối với một số thông số kỹ thuật thay thế.
+	Ở đây chúng tôi trình bày mô hình cơ sở với ác cảm rủi ro. Đặc tả cơ sở đơn giản, chúng tôi cho quy tắc học tập (OLS) và đường cơ sở thủ tục chuẩn. Các kết quả định lượng được thảo luận trong phần 5, trong khi phần 6 minh họa sự mạnh mẽ của các định lượng đối với nhiều loại thay đổi trong quy tắc mô hình và quy trình hiệu chuẩn.\\
+	\subsubsection{Mô hình dưới sự rủi ro}
+	Bây giờ chúng tôi trình bày mô hình cơ bản với rủi ro và chỉ ra rằng
+	những hiểu biết từ mô hình trung lập rủi ro mở rộng một cách tự nhiên cho các trường hợp
+	rủi ro.\\
+	
+	Các điều kiện đặt hàng đầu tiên của nhà đầu tư từ phương trình (3) cùng với giả định rằng
+	chủ đầu tư biết kỳ vọng có điều kiện của cổ tức cung cấp giá cổ phiếu từ phương trình của mô hình.\
+	\begin{equation}
+	P_t=\delta\bar{E_t}\left(\left(\frac{D_t}{D_{t+1}}\right)^{\sigma} P_{t+1}\right)+\delta E_t\left(\frac{D^{\sigma}_t}{D^{\sigma -1}_{t+1}}\right)
+	\end{equation}
+	Để xác định mô hình học tập, tương tự như trường hợp trung lập rủi ro, chúng tôi
+	xem xét các tác nhân học tập có kỳ vọng ở (24) có mẫu
+	\begin{equation}
+	\bar{E_t}\left(\left(\frac{D_t}{D_{t+1}}\right)^{\sigma} P_{t+1}\right)=\beta_tP_t
+	\end{equation}
+	Chúng ta kí hiệu $\beta_t$ là kỳ vọng tăng trưởng giá cổ phiếu điều chỉnh rủi ro. Nếu $\beta_t=\beta^{RE}$ chủ đầu tư có tỷ lệ kỳ vọng và nếu $\beta_t \to \beta^{RE}$ thì mô hình học tập sẽ đáp ứng tính hợp lý tiệm cận.\\
+	Là một đặc điểm kỹ thuật cơ bản, chúng tôi xem xét lại trường hợp các đại lý sử dụng phương pháp bình phương tối tiểu để hình thành kỳ vọng của họ về tăng trưởng giá cổ phiếu trong tương lai (điều chỉnh rủi ro).
+	\begin{equation}
+	\beta_t=\beta_{t-1}+\frac{1}{\alpha_t}\left[\left(\frac{D_{t-2}}{D_{t-1}}\right)^{\sigma}\frac{P_{t-1}}{P_{t-2}}-\beta_{t-1}\right]
+	\end{equation}
+	Với $\sigma=0$: thiết lập ở trên làm giảm tính trung lập rủi ro với mô hình trong 
+	nghiên cứu trong phần 3. Khi $\sigma >0$: thiết lập tương tự như dưới sự trung lập rủi ro vì cổ phiếu điều chỉnh rủi ro tăng trưởng giá.
+	Điều này sẽ cải thiện khả năng của mô hình học tập để phù hợp với những khoảnh khắc trong dữ liệu.\\
+	
+	Như trong trường hợp trung lập rủi ro, chúng ta cần áp đặt một cơ sở chiếu để đảm bảo
+	niềm tin đó thỏa mãn sự bất phương trình (14). Để tạo điều kiện hiệu chuẩn mô hình, được mô tả trong phần tiếp theo, chúng tôi thay đổi cơ sở chiếu một chút để đảm bảo
+	độ tin cậy của giải pháp đối với các giá trị tham số. Chi tiết là được mô tả trong phụ lục A.6.3. Như trước đây, cơ sở chiếu đảm bảo rằng \textit{Tỷ lệ giá cổ tức} sẽ không bao giờ vượt quá giá trị 500.\\
+	Cuối cùng, chúng tôi chỉ ra rằng niềm tin tiếp tục hiển thị động lượng và sự đảo ngược, tương tự như trường hợp có tính trung lập rủi ro. Sử dụng phương trình (25),(26) và $E_t(D^{\sigma}_{t}D^{1-\sigma}_{t+1})=\beta^{RE}D_t$ đã cho thấy giá cổ phiếu được cho bởi
+	\begin{equation}
+	P_t=\frac{\delta\beta^{RE}}{1-\delta\beta_t}D_t
+	\end{equation}
+	\begin{equation}
+	\frac{P_t}{P_{t-1}}=\left(1+\frac{\delta\Delta\beta_t}{1-\delta\beta_t}\right)a\varepsilon_t
+	\end{equation}
+	
+	Từ các phương trình (27) và (29) theo đó là niềm tin vào mô hình không thích rủi ro có thể được mô tả bởi:
+	\begin{equation}
+	E_{t-1}\Delta\beta_{t+1}=\frac{1}{\alpha_{t+1}}(T(\beta_t,\Delta\beta_t)-\beta_{t-1})
+	\end{equation}
+	
+	\begin{equation}
+	T(\beta_t,\Delta\beta_t)=\left(\beta^{Re}+\frac{\beta^{RE}\delta\Delta\beta_t}{1-\delta\beta_t}\right)
+	\end{equation} 
+	
+	Chúng tôi kết luận rằng, về mặt định tính, các tính năng chính của mô hình đang học có khả năng vẫn còn sau khi ác cảm rủi ro được đưa ra, nhưng mô hình đó thậm chí còn tạo ra biến động cao.
+	\subsubsection{Quy trình hiệu chuẩn cơ sở}
+	Phần này mô tả và thảo luận về quy trình hiệu chuẩn của chúng tôi. Giả sử
+	rằng vectơ tham số của mô hình học tập cơ bản của chúng tôi là $\theta\equiv(\delta,\sigma,\frac{1}{\alpha_1},a,s)$ với $\delta$ là hệ số chiết khấu, $\sigma$ là hệ số  của rủi ro, $\alpha_1$ tác nhân ban đầu trong giá trị kỳ vọng hợp lý và $a$ và $s$ là trung bình và độ lệch chuẩn của tăng trưởng cổ tức, tương ứng. Vì đó là mối quan tâm của chúng tôi đối với  mô hình, có thể phù hợp với sự biến động của giá cổ phiếu ở mức thấp với lo ngại rủi ro, chúng ta cố định $\sigma=5$\\
+	Như trong các mô hình hiệu chuẩn, chúng tôi đo lường mức độ tốt của việc sử dụng
+	các tỷ số $t$
+	\begin{equation}
+	\frac{\hat{S_i}-\bar{S_i}(\theta^c)}{\hat{\sigma}_{s_i}}
+	\end{equation}
+	Với $\hat{S_i}$ kí hiệu là mẫu thứ $i$, $\bar{S_i}(\theta^c)$ thống kê bao hàm tương ứng Như trong các mô hình hiệu chuẩn, chúng tôi kết luận rằng các mô hình là thỏa đáng nếu các tỷ lệ $t$ nhỏ hơn. Điều này ngụ ý rằng độ lệch chuẩn lớn hơn sẽ nhận được trọng lượng ít hơn và được kết quả ít chính xác hơn. Lưu ý rằng kết quả hiệu chuẩn là không đổi đối với một tiềm năng thay đổi kích thước của những khoảnh khắc. Các chi tiết của thủ tục được xác định và giải thích trong phụ lục A.6.\\
+	Trong tài liệu hiệu chuẩn, nó là tiêu chuẩn để thiết lập ước tính của tiêu chuẩn sai lệch. Đầu tiên, nó khuyến khích nhà nghiên cứu tạo ra các mô hình với độ lệch chuẩn cao, vì những điều này xuất hiện để cải thiện mô hình vì chúng làm tăng mẫu số của tỷ số $t$. 
+	Thứ hai, để tăng khả năng so sánh với Campbell và Cochrane (1999), chúng tôi
+	đã chọn một mô hình với tỷ lệ không có rủi ro liên tục, sao cho tiêu chuẩn theo mô hình cổ tức là $\hat{\sigma}_{E(r^b)}=0$. Chúng tôi trình bày trong phụ lục A.6
+	làm thế nào để có được ước tính phù hợp của các độ lệch chuẩn này từ dữ liệu.
+	Với các ước tính này, chúng tôi sử dụng các tỷ lệ $t$ kết quả này làm thước đo phù hợp cho
+	mỗi thống kê mẫu và tuyên bố có $t$ nếu tỷ lệ này dưới hai hoặc ba.\\
+	
+	Tóm lại, chúng tôi nghĩ về phương pháp vừa được mô tả như một cách để chọn thông số. Như vậy mô hình có một cơ hội tốt để đáp ứng dữ liệu cho mô hình.
+\section{Kết quả định lượng}
+Bây giờ chúng ta đánh giá hiệu suất định lượng của mô hình huấn luyện (  sử dụng OLS, $\sigma=5$, $C_t=D_t$), khi sử dụng phương pháp hiệu chuẩn cơ sở đã được mô tả trước đó.\\
+\begin{figure}[!h]
+	\centering
+%%	\includegraphics[height=6cm,width=10cm]{hinh4}
+	%\caption{da}
+\end{figure}\\
+Kết quả được tóm tắt trong bảng 4 bên trên thì cột 2 và cột 3 của bảng tương ứng với định giá tài sản hiện tại từ dữ liệu mà chúng ta tìm kiếm để phù hợp và ước tính độ lệch chuẩn  tại mỗi thời điểm.Bảng này cho thấy rằng một số thời điểm báo cáo ước tính là khá không chính xác.\\
+\\
+Giá trị của tham số hiệu chuẩn của mô hình huấn luyện được biểu thị ở cuối bảng. Chú ý rằng độ khuếch đại $1/\alpha_1$ là rất nhỏ.\\
+Như đã giải thích giá trị $1/\alpha_1$ cao thì sẽ gây có khả năng gây ra xu hướng biến động và làm tăng biến động lên rất nhiều và đó cũng là lí do mà tại sao lại phải chọn $1/\alpha_1$ thấp.\\
+Trong bảng 4 thì cột 5 là giá trị phụ thuộc vào tỷ lệ t(t-ratio).Mô hình huấn luyện này đực thực hiện tốt đáng kể.
+Đặc biệt mô hình với rủi ro( risk aversion) duy trì sự biến động cao và tương quan nối tiếp của của tỷ lệ $PD$ và biến động của lợi nhuận cổ phiếu được miêu tả trong phần 3 " The risk neautral case" các trường hợp rủi ro.Ngoài ra chúng ta bây giờ đã thành công trong việc làm cho phù hợp trung bình của tỷ lệ $PD$ và cũng phù hợp với phi phí bảo hiểm vốn sở hữu khá là tốt. Như đã đề cập trước đó, thực tế rằng lợi nhuận hồi quy vượt mức cũng có thể giải thích lí do vì sao mối tương quan nối tiếp lại of $PD$ phù hợp.\\
+\\
+Đặc biệt lưu ý rằng quy trình hiệu chỉnh chọn một giá trị $\delta$ có nghĩa sao cho là lãi suất phi rủi ro lớn hơn gấp đôi so với ước tính điểm trong dữ liệu. Trong khi đó độ lệch chuẩn của $\widehat E(r^b)$ được báo cáo trong cột ba của bảng 4 là khá lớn, tuy nhiên giá trị tỷ lệ t lại rất nhỏ.\\
+\\
+Tóm tắt lại kết quả của bảng đã chỉ cho ta thấy được cách cải thiện độ phù hợp của mô hình liên quan đến các trường hợp với $RE$ và hơn nữa rất thành công cho cho việc tính toán định lượng cho các bằng chứng thực nghiệm trong phần.\\
+
+\section{Độ bền (Robustness)}
+Trong phân này chỉ ra đặc tính định lượng là độ bền để mở rộng một số. Chúng ta bắt đầu  khám phá những phương pháp huấn luyện thay thế, sau đó xét những mô hình khác và cuối cùng sẽ thảo luận về những quy trình hiệu chuẩn thay thế.\\
+\subsection{Huấn luyện về cổ tức.}
+\begin{figure}[!h]
+	\centering
+%%	\includegraphics[height=6cm,width=10cm]{hinh5}
+	%\caption{da}
+\end{figure}
+Trong mô hình cơ sở chúng ta giả sử rằng chúng ta biết trước điều kiện của cổ tức.Điều này để đơn giản hóa những giải trình và tìm hiểu về cổ tức đã được xem sét của các bài viết trước đó.\\
+Trong bảng 5 bên trên đã chỉ ra kết quả định lượng với những huấn luyện về cổ tức mà sử dụng mô hình hiệu chuẩn cơ sở miêu tả ở phần 5.Nó đã giới thiệu cho ta thấy những huấn luyện cổ tức không dẫn đến những thay đổi quan trọng.
+
+\subsection{Hệ số tăng ích.}
+Mooth đặc tính không mong muốn của "OLS learning scheme" là biến động của giá cổ phiếu giảm theo thời gian, có vẻ như phản tác dụng. Vì vậy, ta lược bỏ đi OLS và thay vào đó là giới thiệu mô hình huấn luyện với hệ số tăng ích nơi mà trọng lượng của dự báo sai số có hệ số $\alpha_t=\alpha_1$. Sau đó ta nhận được dự báo sai số theo một cách xuyên suốt  và giá cổ phiếu không tăng tại cuối mỗi giai đoạn.\\
+Kết quả định lượng trong bảng 5 về mô hình hệ số tăng ích sử dụng mô hình khuếch đại cơ sở . Dựa vào bảng 5 ta thấy rõ ràng hơn là giá cổ phiếu bây giờ biến động hơn thậm chí là mức tăng ban đầu thấp hơn đáng kể trong các trường hợp cơ bản.Nhìn Chung là mô hình này rất là phù hợp, rất tốt.
+
+\subsection{Chuyển đổi trọng lượng.}
+Bây giờ chúng tôi giới thiệu về mô hình huấn luyện mà mức tăng chuyển đổi theo thời gian như  Marcet and Nicolini (2003) đã nói trước đó. Ý tưởng là kết hợp hệ số tăng ích với OLS, sử dụng trước đây trong các giai đoạn có lỗi dự báo lớn xảy ra và sau lỗi dự báo thấp.\\
+Kết quả định lượng báo cáo trong bảng 5 về chuyển đổi trọng lượng tương tự với hệ số tăng ích.
+\subsection{Tiêu thụ dữ liệu.}
+Trong suốt bài báo thì bài báo đã đơn giản hóa bằng cách giả sử $C=D$. Thì tác giả đã hiệu chỉnh quy trình này thành dữ liệu cổ tức bởi vì khi nghiên cứu dữ liệu biến động giá cổ phiếu phải được tìm ra.Nhưng ai cũng biết rằng biến động tiêu dùng ít biến động hơn biến động cổ tức.Vì vậy có hai cách chọn để giúp giải thích cho biến động và chi phí bảo hiểm rủi ro.Thế nên bài báo đã giả sử trường hợp là $C \ne D$ và hiệu chỉnh sự biến động của quá trình tiêu thụ và cổ tức riêng biệt với dữ liệu. Đăt:\\
+$$\frac{C_{t+1}}{C_t}=a \varepsilon_{t+1}^{c} \quad ln\varepsilon_{t}^{c} \sim iiN(-\frac{s_{c}^2}{2};s_{c}^{2})$$\\
+Bài báo hiệu chỉnh quá trình tiêu thụ sau theo  Campbell and Cochrane (1999), tức là đặt:\\
+$s_c=\frac{s}{7}$ và $\rho(\varepsilon^c,\varepsilon)=2$\\
+
+\begin{figure}[!h]
+	\centering
+%%	\includegraphics[height=6cm,width=10cm]{hinh6}
+	%\caption{da}
+\end{figure}
+
+Kết quả định lượng trên bảng 6 cho thấy rằng chúng ta không thể làm phù hợp dữ liệu tốt được như trước  Đặc biệt việc hiệu chuẩn tham số không phù hợp với tỷ lệ rủi ro.
+\subsection{Hạn chế trên $\delta$.}
+Bài báo đều chọn $\delta \leq 1$ trong các trường hợp được xét ở trong bảng 5 và 6.Hóa ra hạn chế này là không cần thiết vì ác cảm rủi ro khiến các nguyên nhân giảm cổ tức trong tương lai nặng càng nặng nề hơn.\\
+\begin{figure}[!h]
+	\centering
+%%	\includegraphics[height=6cm,width=10cm]{hinh7}
+	%\caption{da}
+\end{figure}
+Như kết quả trong bảng 7 người viết đã chọn $\delta > 1$. Ta thấy rằng mô hình cải thiện hơn khi không còn sự ràng buộc của $\delta$ nữa. Chúng ta có thể kết luận mô hình này phù hợp với dữ liệu nhất.
+\subsection{Độ lệch chuẩn cổ tức do mô hình tạo ra.}
+Như đã miêu tả đây là phần cuối mô tả độ bền bằng việc sử dụng tỷ lệ t dựa trên mô hình Độ lệch chuẩn cổ tức do mô hình tạo ra. Đây là cách tiếp cận phù hợp trong hầu hết cái hiệu chuẩn được trích dẫn. Một lần nữa đây là mô hình khá tốt.
+\section{Kết luận và định hướng}
+Việc mở rộng huấn luyện một tham số của mô hình định giá tài sản rất đơn giản giúp cải thiện mạnh mẽ khả năng của mô hình để tính toán một cách định lượng cho một số sự kiện định giá tài sản, ngay cả với mức độ rủi ro vừa phải. 
+\\Kết quả này rất đáng chú ý, dựa trên các bài bão được ghi nhận trong tài liệu định giá tài sản theo kinh nghiệm để kiểm chứng các nhận định này. Các mô hình của các mô hình kỳ vọng hợp lý cho thấy rằng các quá trình huấn luyện có thể phù hợp hơn để giải thích các hiện tượng thực nghiệm hơn so với suy nghĩ trước đây. Trong khi chúng ta nới lỏng giả định về những kỳ vọng hợp lý, kế hoạch huấn luyện được sử dụng ở đây là một sai lệch nhỏ so với tính hợp lý đầy đủ. \\
+Do đó, đáng ngạc nhiên là một sự cải thiện lớn như vậy trong sự phù hợp của dữ liệu có thể đạt được. Thật vậy, dường như trường hợp thuyết phục nhất đối với các mô hình huấn luyện có thể được thực hiện bằng cách giải thích các sự kiện có vẻ khó hiểu từ quan điểm kỳ vọng hợp lý. Thiết lập đơn giản được trình bày trong bài báo này có thể được mở rộng theo một số cách thú vị và cũng được áp dụng để nghiên cứu các câu hỏi thực chất khác. \\
+Một con đường mà hiện đang khám phá là hỏi xem liệu các quá trình huấn luyện có thể giải thích cho hành vi khó hiểu của tỷ giá hối đoái hay không. Rõ ràng, khả năng của các mô hình huấn luyện đơn giản để giải thích các hiện tượng thực nghiệm khó hiểu ở nhiều hơn một thị trường sẽ làm tăng thêm sự ngưng kết trong việc huấn luyện gây ra những sai lệch nhỏ so với tính hợp lý thực sự có liên quan về mặt kinh tế.
+\end{document}
